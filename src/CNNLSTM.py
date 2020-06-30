@@ -16,9 +16,6 @@ pt = lambda s:print(type(s),s)
 nb_epoch = 100
 # number_of_batch = 100
 batch_size = 72
-# frame_row = 28
-# frame_col = 2
-# channels = 1
 output_dim = 1
 
 def classifyRes(arr):
