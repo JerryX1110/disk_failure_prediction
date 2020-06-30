@@ -4,7 +4,7 @@ import time
 import pickle
 import warnings
 import argparse
-from utils.loadData import read_data
+from utils.loadData import read_data1 as read_data
 from utils.evaluation import calMetrix
 
 # from sklearn import tree
