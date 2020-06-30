@@ -3,7 +3,6 @@ import numpy as np
 def read_data(xpath, ypath, group):
     X = np.load(xpath)
     y = np.load(ypath)
-    forSOD = False
     L = X.shape[0]
     # **********************
     # smart: 0 - 12
@@ -22,8 +21,6 @@ def read_data(xpath, ypath, group):
     }
     assert group in groups
     useGroup = groups[group]
-    if forSOD == True:
-        useGroup = [i for i in range(49)]
     X = X[:,:,useGroup]
     # **********************
     X = X.reshape(L, -1)
